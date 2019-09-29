@@ -2,3 +2,12 @@ img {
     width: 47vw;
     height: 60vh;
 }
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul>div>li {
+    display: none;
+}

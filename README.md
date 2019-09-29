@@ -1,4 +1,4 @@
 # Carousel-Vanilla-JS
 Carousel-Vanilla-JS
 
-![image]("https://github.com/DRINGOT/Carousel-Vanilla-JS/blob/master/IMG/carousselVJS.png" "Carousel")
+![image]("https://raw.githubusercontent.com/DRINGOT/Carousel-Vanilla-JS/master/IMG/carousselVJS.png" "Carousel")

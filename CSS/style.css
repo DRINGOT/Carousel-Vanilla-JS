@@ -15,3 +15,9 @@ ul>div>li {
 .active {
     display: block;
 }
+
+body {
+    background-image: url("http://ekladata.com/hlwFEeJHrx85BnAMI_2uF_OR_cc.png");
+    background-size: cover;
+    font-size: 10px
+}

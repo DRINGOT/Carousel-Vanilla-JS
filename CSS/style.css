@@ -22,6 +22,8 @@ body {
     font-size: 10px
 }
 
+/* button */
+
 button {
     all: unset;
     text-decoration: none;
@@ -64,4 +66,39 @@ button::-moz-focus-inner {
     outline-offset: 15px;
     color: #f79533;
     text-shadow: 1px 1px 2px #427388;
+}
+
+/* border img */
+
+.gradient-border {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #b89c50, #ad4f10, #b32f07, #baac6f);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
